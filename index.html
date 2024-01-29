@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="d3.parcoords.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+
+        <title>IVIS 24 Project 1</title>
+    </head>
+
+    <body>
+        <div id="guidance">
+            <h3>Guidance</h3>
+            <p>In this webpage, you can check the score of each participant and try to form the best group based on one or multiple skills selected by you. 
+                The filtering functionality in this web page allows you to interactively filter and display specific data based on their preferences or criteria. 
+            After you choose the range of certain skills, the 'Possible Group Members' will show the corresponding names based on your choice. By clicking on these names, you can add them to your selected group.</p>
+        </div>
+        <div id="overlay"></div>
+        <div id="header">
+            <h2>IVIS 24 Project 1</h2>
+        </div>
+        <div class="container-fluid">
+            <div id="pc" class="row">
+
+                <div class="col-md-12">
+                    <div class="justify-content-center row">
+                        <div id="vis" class="parcoords col-11"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="tables" class="row">
+
+                <div id="classTable" class="col-md-12">
+                    <h4></h4>
+
+                    <table id="studentTable" class="table table-bordered">
+
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+        <div id="tooltip" style="position: absolute; visibility: hidden; padding: 10px; background-color: white; border: 1px solid #ccc; border-radius: 5px;"></div>
+        <div id="nameTooltip" style="position: absolute; visibility: hidden; padding: 10px; background-color: white; border: 1px solid #ccc; border-radius: 5px;"></div>
+
+        <div id="possibleGroupMembers">
+            <table id="membersTable" class="table table-bordered"></table>
+        </div>
+        <div id="selectedGroup">
+            <table id="groupTable" class="table table-bordered"></table>
+        </div>
+
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="d3.parcoords.js"></script>
+		<script src="vis.js"></script>
+    </body>
+</html>

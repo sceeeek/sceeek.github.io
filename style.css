@@ -1,0 +1,177 @@
+html {
+    background-image: linear-gradient(to right, #bccadc, #93a5cf);
+}
+body {
+    background-image: linear-gradient(to bottom right, #e4efe9, #93a5cf);
+}
+
+#classTable table {
+    width: 100%; 
+    table-layout: fixed;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  #classTable th, #classTable td {
+    width: 20%; 
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+  }
+  
+
+#vis .axis path,
+#vis .axis line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px; 
+    shape-rendering: crispEdges;
+}
+
+#vis .axis text {
+    font-family: sans-serif;
+    font-size: 10px;
+    padding: 5px;
+}
+
+
+
+#possibleGroupMembersTable,
+#selectedGroupTable {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px; 
+}
+
+#guidance {
+    background-color: #f8f9fa; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+#header {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.row {
+    margin-bottom: 25px;
+}
+
+#vis {
+    height: 100%; 
+}
+
+
+#studentTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #studentTable td {
+    border: 1px solid #000; 
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+
+
+.parcoords {
+    background-color: #f8f9fa; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px; 
+    height: auto; 
+    min-height: 500px; 
+}
+
+
+
+#filteredNamesDisplay {
+    margin-top: 20px;
+}
+.filtered-name {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.parcoords svg {
+    background: transparent; 
+}
+
+.parcoords line, .parcoords path {
+    stroke: #ddd; 
+}
+
+
+
+.progress {
+    height: 26px;
+    margin: 10px;
+}
+
+.progressLabel {
+    padding-top: 2px;
+    padding-left: 5px;
+    color: #1c0d0d;
+}
+
+#explanatoryProgBars {
+    margin-top: 15px;
+}
+
+
+.parcoords {
+    height: 400px;
+    -webkit-box-shadow: 10px 10px 35px -5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 35px -5px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 35px -5px rgba(0,0,0,0.5);
+}
+
+#studentTable td.highlighted {
+    background-color: #FFFF99;
+}
+
+
+.highlighted {
+    background-color: yellow;
+}
+
+
+#tables {
+    text-align: center;
+}
+
+.table td {
+    padding: 2px;
+}
+
+.table tr .filtered {
+    display: none; 
+}
+
+
+.badge { 
+    flex: 0 0 auto;
+    margin: 0px 2px; 
+}
+
+.bgSociety { background: #FF0000; }
+.bgSocial {  background: #CC3300; }
+.bgTravel {  background: #888800; }
+.bgPhoto {   background: #33CC00; }
+.bgArt {     background: #00FF00; }
+.bgMusic {   background: #00CC33; }
+.bgFood {    background: #008888; }
+.bgGym {     background: #0033CC; }
+.bgSport {   background: #0000FF; }
+.bgGaming {  background: #3300CC; }
+.bgProg {    background: #880088; }
+.bgIVIS {    background: #CC0033; }
+
+.bgFood, .bgGym, .bgSport, .bgGaming, .bgProg { text-decoration: #FFFFFF; }
